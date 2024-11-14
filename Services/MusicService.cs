@@ -17,5 +17,12 @@ namespace ZeneApp.Services
             _context.MusicLibrary.Add(music);
             _context.SaveChanges();
         }
+
+        public IEnumerable<Music> GetAllMusic()
+        {
+            return _context.MusicLibrary
+                .OrderByDescending(m => m.Priority)
+                .ToList();
+        }
     }
 }

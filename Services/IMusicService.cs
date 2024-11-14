@@ -5,5 +5,6 @@ namespace ZeneApp.Services
     public interface IMusicService
     {
         void AddMusic(Music music);
+        IEnumerable<Music> GetAllMusic();
     }
 }

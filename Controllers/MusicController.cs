@@ -30,5 +30,12 @@ namespace ZeneApp.Controllers
             }
             return View("NewMusic", music);
         }
+
+        [HttpGet]
+        public IActionResult Explore()
+        {
+            var musicList = _musicService.GetAllMusic();
+            return View(musicList);
+        }
     }
 }

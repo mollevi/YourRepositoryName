@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/mollevi/ZeneApp/Views/Music/Explore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzaWMvRXhwbG9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mollevi/ZeneApp/Views/Music/NewMusic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzaWMvTmV3TXVzaWMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

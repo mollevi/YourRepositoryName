@@ -1,0 +1,29 @@
+@model IEnumerable<ZeneApp.Models.Music>
+
+@{
+    ViewData["Title"] = "Bongeszes";
+}
+
+<h2>Explore Music</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cim</th>
+            <th>Eloado</th>
+            <th>Kiadas eve</th>
+            <th>Hossz</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var music in Model)
+        {
+            <tr>
+                <td>@music.Title</td>
+                <td>@music.Performer</td>
+                <td>@music.YearOfPublishing</td>
+                <td>@music.Length</td>
+            </tr>
+        }
+    </tbody>
+</table>
