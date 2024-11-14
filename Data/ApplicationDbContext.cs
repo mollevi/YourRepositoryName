@@ -8,7 +8,6 @@ namespace ZeneApp.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
             : base(options) {}
 
-        public required DbSet<Zene> Zenek {get; set; }
-
+        public DbSet<Music> MusicLibrary { get; set; }
     }
 }

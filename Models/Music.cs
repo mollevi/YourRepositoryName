@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ZeneApp.Models
 {
-    public class Zene
+    public class Music
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public required string Title { get; set; }
         public required string Performer { get; set; }
         public uint YearOfPublishing { get; set; }

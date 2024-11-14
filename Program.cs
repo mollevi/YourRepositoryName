@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ZeneApp.Data;
+using ZeneApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,8 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
-        options.UseSqlite("Data Source=ZeneAppDB.db")
+        options.UseSqlite("Data Source=ZeneAppDB.sqlite")
     );
+builder.Services.AddScoped<IMusicService, MusicService>();
 
 var app = builder.Build();
 
