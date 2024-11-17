@@ -10,7 +10,7 @@ using ZeneApp.Data;
 namespace ZeneApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241114184930_InitialCreate")]
+    [Migration("20241117154739_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -29,14 +29,12 @@ namespace ZeneApp.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Performer")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<uint>("Priority")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<uint>("YearOfPublishing")

@@ -26,14 +26,12 @@ namespace ZeneApp.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Performer")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<uint>("Priority")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<uint>("YearOfPublishing")

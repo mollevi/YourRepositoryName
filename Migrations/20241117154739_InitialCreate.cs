@@ -16,8 +16,8 @@ namespace ZeneApp.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Title = table.Column<string>(type: "TEXT", nullable: false),
-                    Performer = table.Column<string>(type: "TEXT", nullable: false),
+                    Title = table.Column<string>(type: "TEXT", nullable: true),
+                    Performer = table.Column<string>(type: "TEXT", nullable: true),
                     YearOfPublishing = table.Column<uint>(type: "INTEGER", nullable: false),
                     Length = table.Column<uint>(type: "INTEGER", nullable: false),
                     Priority = table.Column<uint>(type: "INTEGER", nullable: false)
