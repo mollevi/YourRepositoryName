@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZeneApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a495995cb5495cf6e18d24e890b6c6f7f4a3230")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96ce5dcf30bfdcbfa1543785a598244865896fb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZeneApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZeneApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

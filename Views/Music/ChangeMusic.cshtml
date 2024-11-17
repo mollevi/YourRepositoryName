@@ -1,0 +1,38 @@
+@model IEnumerable<ZeneApp.Models.Music>
+
+@{
+    ViewData["Title"] = "Change Music";
+}
+
+<h2>Change Music</h2>
+
+<form asp-action="EditOrDeleteMusic" method="post">
+    <div class="form-group">
+        <label for="musicSelection">Select Music to Edit or Delete</label>
+        <select id="musicSelection" name="id" class="form-control" required>
+            <option value="">-- Select Music --</option>
+            @foreach (var music in Model)
+            {
+                <option value="@music.Id">@music.Title - @music.Performer</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" name="action" value="Edit" class="btn btn-primary">Edit</button>
+        <button type="submit" name="action" value="Delete" class="btn btn-danger">Delete</button>
+    </div>
+</form>
+
+<!-- Include Select2 CSS and JavaScript -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#musicSelection').select2({
+            placeholder: "Search Music",
+            allowClear: true
+        });
+    });
+</script>

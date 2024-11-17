@@ -1,0 +1,43 @@
+@model ZeneApp.Models.Music
+
+@{
+    ViewData["Title"] = "Zene modositas";
+}
+
+<h2>ZeneApp modositas</h2>
+
+<form asp-action="UpdateMusic" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Performer"></label>
+        <input asp-for="Performer" class="form-control" />
+        <span asp-validation-for="Performer" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="YearOfPublishing"></label>
+        <input asp-for="YearOfPublishing" class="form-control" />
+        <span asp-validation-for="YearOfPublishing" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Length"></label>
+        <input asp-for="Length" class="form-control" />
+        <span asp-validation-for="Length" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Priority"></label>
+        <input asp-for="Priority" class="form-control" />
+        <span asp-validation-for="Priority" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Update</button>
+</form>
