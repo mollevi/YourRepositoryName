@@ -1,0 +1,26 @@
+﻿# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+.vscode/
+
+# IDE-specific files
+.idea/
+*.vs/
+
+# Environment-specific files
+.env
+
+# Database files (optional, if you regenerate it during migrations)
+*.db
+*.sqlite
+
+# Log files
+*.log
+
+# Dependencies (if managed via global settings)
+.DS_Store
+node_modules/
